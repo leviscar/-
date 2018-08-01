@@ -1,0 +1,4 @@
+# Generator函数
+Generator函数是ES6提供的一种异步编程解决方案
+
+执行Generator函数会返回一个遍历器对象，也就是说，Generator函数除了状态机，还是一个遍历器对象生成函数。返回的遍历器对象，可以依次遍历Generator函数内部的每一个状态。
