@@ -147,6 +147,12 @@
 			默认值。没有定位，元素出现在正常的流中（忽略 top, bottom, left, right z-index 声明）。
 		  inherit
 			规定从父元素继承 position 属性的值。
+		  initial
+		  	`initial` 关键字用于设置 `CSS` 属性为它的默认值，可作用于任何 CSS 样式。（IE 不支持该关键字）
+		  unset
+			名如其意，unset 关键字我们可以简单理解为不设置。其实，它是关键字 initial 和 inherit 的组合
+			如果该属性是默认继承属性，该值等同于 inherit  如果该属性是非继承属性，该值等同于 initial
+
 
 - CSS3有哪些新特性？
 
