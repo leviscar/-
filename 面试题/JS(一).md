@@ -283,7 +283,8 @@
 
 -  写一个通用的事件侦听器函数。
 
-			// event(事件)工具集，来源：github.com/markyun
+	```javascript
+	// event(事件)工具集，来源：github.com/markyun
 			markyun.Event = {
 				// 页面加载完成后
 				readyEvent : function(fn) {
@@ -361,6 +362,7 @@
 				}
 			};
 
+	```
 -  ["1", "2", "3"].map(parseInt) 答案是多少？
 
 		parseInt() 函数能解析一个字符串，并返回一个整数，需要两个参数 (val, radix)，

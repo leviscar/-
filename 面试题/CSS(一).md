@@ -152,6 +152,14 @@
 		  unset
 			名如其意，unset 关键字我们可以简单理解为不设置。其实，它是关键字 initial 和 inherit 的组合
 			如果该属性是默认继承属性，该值等同于 inherit  如果该属性是非继承属性，该值等同于 initial
+		  sticky 
+		  	粘性布局
+			这是一个结合了 position:relative 和 position:fixed 两种定位功能于一体的特殊定位，适用于一些特殊场景。
+			元素先按照普通文档流定位，然后相对于该元素在流中的 flow root（BFC）和 containing block（最近的块级祖先元素）定位。
+
+			而后，元素定位表现为在跨越特定阈值前为相对定位，之后为固定定位。
+
+			这个特定阈值指的是 top, right, bottom 或 left 之一，换言之，指定 top, right, bottom 或 left 四个阈值其中之一，才可使粘性定位生效。否则其行为与相对定位相同。
 
 
 - CSS3有哪些新特性？
@@ -181,6 +189,8 @@
 - 用纯CSS创建一个三角形的原理是什么？
 
 		把上、左、右三条边隐藏掉（颜色设为 transparent）
+		transparent 透明
+		每个方向的border都是三角形
 		#demo {
 		  width: 0;
 		  height: 0;
