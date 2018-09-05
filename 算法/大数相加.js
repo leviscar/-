@@ -8,5 +8,5 @@ function sumString(a,b) {
         res = c%10 + res;
         c = c>9;
     }
-    return res.replace(/^0+/,'');
+    return res.replace(/^0+/,''); 
 }
