@@ -25,3 +25,10 @@ Object.create = function (proto) {
     F.prototype = proto;
     return new F();
 }
+
+
+Object.create = function (obj) {
+    function F(){};
+    F.prototype = obj;
+    return new F();
+}

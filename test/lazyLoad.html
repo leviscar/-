@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>LazyLoad</title>
+</head>
+<body>
+    <div>
+        <img src="../Images/cache1.png" alt="">
+        <img src="../Images/cache2.png" alt="">
+        <img src="../Images/cacheFirebug.png" alt="">
+        <img src="../Images/cacheHtml.jpg" alt="">
+        <img src="../Images/cacheUser.png" alt="">
+        <img src="../Images/dom006.png" alt="">
+        <img src="../Images/event_loop.jpg" alt="">
+    </div>
+    <script>
+        var stu = '[{"name":"张三","class":2,"score":64},{"name":"李四","class":1,"score":80},{"name":"王五","class":1,"score":80},{"name":"赵六","class":4,"score":94}]';
+        stu = JSON.parse(stu);
+        function sortStudents(students) {
+            students.sort(function(x,y){
+                if( x.class === y.class ){
+                    return y.score - x.score;
+                }
+                return x.class - y.class;
+            });
+            return students;
+        }
+
+        sortStudents(stu);
+    </script>
+</body>
+</html>
