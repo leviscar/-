@@ -22,6 +22,7 @@ Cross Site Scripting,即跨站脚本。绝大多数XSS攻击都会采用嵌入�
 3. 域分离
 4. 安全传输
 5. 安全Cookie
+    1. 使用http-only 
 6. 优秀的验证码
    
 ### CSRF
